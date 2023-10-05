@@ -1,26 +1,16 @@
-function ativasenha(){
-    let senha=document.getElementById('senha')
-    let teste = document.getElementById('form')
-
-    teste.classList.toggle('ver')
-    if(teste.classList.contains('ver')){
-        input.type='text'
-
-
-    }
-}
 function see(){
-    let input = document.getElementById('password');
-    let div = document.getElementById('form');
+    let input = document.getElementById('senha-input');
+    let form = document.getElementById('form');
 
-    div.classList.toggle('see')
-    if(div.classList.contains('see')){
+    form.classList.toggle('see')
+
+    if(form.classList.contains('see')){
         input.type = 'text'
-        document.getElementById('seepassword').innerHTML = '<span id="seepassword"class="material-symbols-outlined">visibility</span>'
+        document.getElementById('senha').name = 'eye-off-outline'
     }
     else{
         
         input.type = 'password'
-        document.getElementById('seepassword').innerHTML = '<span id="seepassword"class="material-symbols-outlined">visibility</span>'
+        document.getElementById('senha').name = 'eye-outline'
     }
 }
